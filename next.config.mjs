@@ -3,7 +3,7 @@ const nextConfig = {
     images: {
         // No domains needed for local images
         // If using remote images, add domains here
-        domains: [],
+        domains: ["via.placeholder.com"],
     },
 };
 

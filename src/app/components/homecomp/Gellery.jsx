@@ -1,5 +1,6 @@
 import React from 'react'
 import Background from '../../components/Background.jsx'
+import Corve from './Corve.jsx'
 
 const Gellery = () => {
     return (
@@ -9,13 +10,10 @@ const Gellery = () => {
 
             {/* Center Text */}
             <div className="z-10 flex flex-wrap justify-center items-center text-2xl md:text-4xl font-bold text-gray-900 dark:text-white">
-                <span className="mx-12">Creative</span>
-                <span className="mx-12">Portfolio</span>
-                <span className="mx-12">of</span>
-                <span className="mx-12">2025</span>
-                <span className="mx-12">of</span>
-                <span className="mx-12">Adnan</span>
-                <span className="mx-12">Ahmad</span>
+                <Corve marqueeText="-- Creative Portfolio of Adnan Year 2025"
+                    speed={3}
+                    curveAmount={200}
+                    className="tracking-widest" />
             </div>
 
             {/* Bottom Text */}

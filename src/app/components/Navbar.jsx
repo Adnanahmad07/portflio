@@ -24,9 +24,9 @@ const Logo = () => (
 
 const HamburgerIcon = ({ isOpen }) => (
     <div className="w-6 h-6 flex flex-col justify-around">
-        <span className={`block h-0.5 bg-white transition-transform duration-300 ease-in-out ${isOpen ? 'rotate-45 translate-y-[5px]' : ''}`} />
-        <span className={`block h-0.5 bg-white transition-opacity duration-300 ease-in-out ${isOpen ? 'opacity-0' : 'opacity-100'}`} />
-        <span className={`block h-0.5 bg-white transition-transform duration-300 ease-in-out ${isOpen ? '-rotate-45 -translate-y-[5px]' : ''}`} />
+        <span className={`block h-0.5 bg-black dark:bg-white transition-transform duration-300 ease-in-out ${isOpen ? 'rotate-45 translate-y-[4px]' : ''}`} />
+
+        <span className={`block h-0.5 bg-black dark:bg-white transition-transform duration-300 ease-in-out ${isOpen ? '-rotate-45 -translate-y-[8px]' : ''}`} />
     </div>
 );
 
@@ -82,7 +82,7 @@ export default function Navbar() {
 
                 {/* --- Main Navbar --- */}
                 <nav className={`w-full py-3 dark:bg-black/80 bg-white/90 backdrop-blur-lg border-b transition-all duration-300 ${isScrolled ? 'border-gray-800' : 'border-transparent'}`}>
-                    <div className={`container mx-auto flex items-center justify-between px-4 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
+                    <div className={`container mx-auto flex items-center justify-between px-4 transition-all duration-300  ${isScrolled ? 'py-2' : 'py-4'}`}>
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-2">
                             <div className={`transition-transform duration-300 ${isScrolled ? 'scale-90' : 'scale-100'}`}>
@@ -123,10 +123,10 @@ export default function Navbar() {
 
                         {/* Mobile Toggle */}
                         <div className="md:hidden flex items-center gap-2">
-                            <button onClick={toggleTheme} className="text-white hover:text-yellow-400 dark:hover:text-gray-700" aria-label="Toggle theme">
-                                {theme === 'light' ? <Moon size={20} /> : <Sun size={20} color="black" />}
+                            <button onClick={toggleTheme} className="text-white  hover:text-yellow-400 dark:hover:text-gray-700" aria-label="Toggle theme">
+                                {theme === 'light' ? <Moon size={20} color='blue' /> : <Sun size={20} color="yellow" />}
                             </button>
-                            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white z-50" aria-label="Toggle menu">
+                            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className=" bg-redz-50 " aria-label="Toggle menu">
                                 <HamburgerIcon isOpen={isMenuOpen} />
                             </button>
                         </div>
