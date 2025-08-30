@@ -46,6 +46,15 @@ const ChromaGrid = ({
             url: "https://dribbble.com/",
         },
         {
+            image: "/assets/circle7.png",
+            title: "Sheikh Arshad",
+            subtitle: "Bussness Developer",
+            handle: "@SkArshad",
+            borderColor: "#F59E0B",
+            gradient: "linear-gradient(165deg,#F53E0B,#000)",
+            url: "https://dribbble.com/",
+        },
+        {
             image: "/assets/circle4.png",
             title: "Kaif Patel",
             subtitle: "Data Scientist",
@@ -74,11 +83,11 @@ const ChromaGrid = ({
         },
         {
             image: "/assets/noimg.png",
-            title: "Faraz Haque",
+            title: "Faraz Haqu",
             subtitle: "DA",
             handle: "@faraz",
-            borderColor: "#06B6D4",
-            gradient: "linear-gradient(135deg,#06B6D4,#000)",
+            borderColor: "#4F46E5",
+            gradient: "linear-gradient(145deg,#4F46E5,#000)",
             url: "https://aws.amazon.com/",
         },
     ];

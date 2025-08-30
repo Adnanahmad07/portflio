@@ -6,7 +6,6 @@ import Education from "./components/homecomp/Education.jsx";
 import Faqs from "./components/homecomp/Faqs.jsx";
 import Testimonia from "./components/homecomp/Testimonia.jsx";
 import Contact from "./components/homecomp/Contact.jsx";
-import Copywrite from "./components/homecomp/Copywrite.jsx";
 
 export default function Home() {
   return (
@@ -65,7 +64,6 @@ export default function Home() {
       <Faqs />
       <Testimonia />
       <Contact />
-      <Copywrite />
     </div>
   );
 }
