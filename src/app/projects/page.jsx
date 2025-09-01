@@ -15,19 +15,19 @@ export default function ProjectsPage() {
     }, []);
 
     return (
-        <div className="p-8 pt-[9rem] bg-white dark:bg-black min-h-screen">
+        <div className="md:p-8 p-4 pt-[9rem] bg-white dark:bg-black min-h-screen">
             <h1 className="max-w-7xl mx-auto text-3xl font-bold text-left mb-10 dark:text-white text-black">
                 Projects
             </h1>
 
-            <div className="w-full max-w-7xl mx-auto grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-6 place-items-center">
+            <div className="w-full max-w-7xl mx-auto grid md:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-6 place-items-center">
                 {projects.map((p) => (
                     <Link
                         key={p.id}
                         href={`/projects/${p.id}`}
                         className="w-full flex justify-center"
                     >
-                        <div className="bg-white dark:bg-[#0A0A0A] border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 rounded-md md:w-[420px] w-96 p-4 text-black dark:text-white relative transition hover:shadow-md">
+                        <div className="bg-white dark:bg-[#0A0A0A] border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 rounded-md md:w-[420px] w-full p-4 text-black dark:text-white relative transition hover:shadow-md">
                             {/* Top row: name + live link + menu */}
                             <div className="flex items-center justify-between">
                                 <div>
